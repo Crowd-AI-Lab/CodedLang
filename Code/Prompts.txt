@@ -1,0 +1,190 @@
+﻿Detection & Classification
+DETECT_PROMPT_TEMPLATE = """You are annotating whether a review contains coded language.
+
+
+Definition:
+"Coded language" refers to intentional encoding or obfuscation of meaning.
+The surface form and the intended hidden meaning are different, and decoding or inference is required to recover the meaning.
+
+
+IMPORTANT:
+Not all socially opaque language is coded language.
+Dialect, jargon, or multilingual text alone does NOT count as coded language unless encoding is involved.
+
+
+Coded language classes (multi-label allowed):
+
+
+1. ambiguous_homophone
+  An existing word or phrase whose literal meaning differs from its hidden meaning.
+  Examples:
+  - 炒鸡 → 超级 (very)
+  - 辣鸡 → 垃圾 (trash)
+  - 稀饭 → 喜欢 (like)
+
+
+2. non_lexical_homophone
+  Homophonic characters or tokens that do NOT form a valid lexical expression on the surface.
+  Examples:
+  - 灰常 (非常)
+  - 菇凉 (姑娘)
+  - 特么(他妈), 桑心（伤心）, 盆友（朋友）, 尼玛（你妈）, 开森（开心）
+
+
+3. phonetic
+  Use of pinyin, phonetic symbols, or roman letters to represent words or meanings instead of full characters.
+  Examples:
+  - nb （牛逼）
+  - tm （他妈）
+  - 好ㄘ（好吃）
+  - e度（呢度）
+
+
+4. emoji
+  Emoji replaces textual content and conveys a hidden meaning DIFFERENT from its literal emoji meaning.
+  Coded examples:
+  - 🐔贼 → 鸡贼
+  - ①般 → 一般
+  - 铁🍔🍔 → 铁憨憨
+
+
+  Non-coded (DO NOT label as coded):
+  - 值🉐 (值得)
+  - 🈵意 (满意)
+  - 酱油🐔 (酱油鸡)
+  - 🦐 (虾)
+
+
+5. orthographic
+  Encoding through visual or orthographic similarity.
+  Examples:
+  - 爪ㄚ → MY
+  - 艹 → 草
+  - N0 G00D → NO GOOD
+
+
+6. transliteration
+  Phonetic transliteration across languages.
+  Examples:
+  - 古德 → good
+  - 歪瑞古德 / 歪立古德 → very good
+  - 纱头 → shuttle
+  - ball ball → 求求
+
+
+7. cipher
+  The sentence has no clear literal semantic meaning and appears intentionally nonsensical or cipher-like.
+  Example:
+  - qqQQaQ！你燃yfyi y f r
+
+
+Exclusions (NOT coded language):
+- Pure dialectal expressions without encoding
+- Pure multilingualism without phonetic or orthographic substitution
+- Emoji used literally without hidden meaning
+
+
+Your task:
+- Decide whether coded language is present.
+- If present, identify ALL applicable coded language classes.
+- Extract exact spans from the review that constitute coded language.
+
+
+Return ONLY valid JSON with the following keys:
+- label: 1 if coded language is present, else 0
+- classes: list of coded language classes (empty if label=0)
+- evidence: list of exact spans copied from the review (empty if label=0)
+- short_reason: <= 20 words explaining the decision
+
+
+Review:
+<<<{text}>>>"""
+
+
+
+
+
+
+Review Prediction
+TEXT_COL = "original_review"
+PREDICT_PROMPT_TEMPLATE = """You will be given a review.
+Estimate the user's intended star rating on a 1–5 scale.
+
+
+Rules:
+- Output JSON ONLY.
+- The JSON must have exactly one field: "rating".
+- The value of "rating" must be a number between 1 and 5.
+- Do not include any explanation or extra fields.
+
+
+Review:
+{text}
+"""
+
+
+
+
+
+
+
+
+
+
+TEXT_COL = "char_mask_review"
+PREDICT_PROMPT_TEMPLATE = """You will be given a review.
+Estimate the user's intended star rating on a 1–5 scale.
+
+
+Note:
+- The token [CODE] indicates masked coded language in the original review.
+- Treat [CODE] as an unknown placeholder
+
+
+Rules:
+- Output JSON ONLY.
+- The JSON must have exactly one field: "rating".
+- The value of "rating" must be a number between 1 and 5.
+- Do not include any explanation or extra fields.
+
+
+Review:
+{text}
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TEXT_COL = "span_mask_review" 
+
+
+PREDICT_PROMPT_TEMPLATE = """You will be given a review.
+Estimate the user's intended star rating on a 1–5 scale.
+
+
+Note:
+- The token [CODE] indicates masked coded language at the token level in the original review.
+- The token [CODE-SPAN] indicates a masked span that replaces two or more consecutive tokens.
+- Treat both [CODE] and [CODE-SPAN] as unknown placeholders.
+
+
+Rules:
+- Output JSON ONLY.
+- The JSON must have exactly one field: "rating".
+- The value of "rating" must be a number between 1 and 5.
+- Do not include any explanation or extra fields.
+
+
+Review:
+{text}
+"""
