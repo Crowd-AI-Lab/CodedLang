@@ -60,7 +60,7 @@ Each sample includes:
 
 ## Coded Language Dictionary
 
-We provide a [coded language dictionary](https://github.com/Crowd-AI-Lab/CodedLang/blob/main/Data/CodeLang.csv) derived from human annotations:
+We provide a coded language dictionary derived from human annotations:
 
 ### Dictionary Fields
 
