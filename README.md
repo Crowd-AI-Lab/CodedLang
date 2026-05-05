@@ -6,7 +6,7 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
 > [ACL 2026]() <br>
 
 <p align="center">
-  <img src="assets/CodedLang_Concept.png" width="85%">
+  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/CodedLang_Concept.png" width="85%">
 </p>
 
 ---
