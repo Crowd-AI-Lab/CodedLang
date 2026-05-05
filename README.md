@@ -11,7 +11,10 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
   <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/CodedLang_Concept.png" width="80%">
 </p>
 <p align="center">
-  <em>Example of creative coded language in a Google Maps restaurant review. Top: the original user review in Chinese, as posted on Google Maps. Left: the machine-generated English translation produced by Google Translate. Right: the inferred underlying meaning obtained by decoding phonetic substitutions.</em>
+  Example of creative coded language in a Google Maps restaurant review. <br>
+    Top: the original user review in Chinese, as posted on Google Maps. <br>
+    Left: the machine-generated English translation produced by Google Translate. <br>
+    Right: the inferred underlying meaning obtained by decoding phonetic substitutions.
 </p>
 
 
