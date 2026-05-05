@@ -63,7 +63,7 @@ Each entry includes:
 - `decode`: Normalized (decoded) form  
 - `coded_lang_class`: Corresponding coded language category
 
-For *phonetic-based coded language, we additionally provide:
+For phonetic-based coded language, we additionally provide:
 - `mid_homophone`: Intermediate homophone form (if applicable)  
 - `code_pinyin`: Pinyin of the coded expression  
 - `decode_pinyin`: Pinyin of the decoded expression  
