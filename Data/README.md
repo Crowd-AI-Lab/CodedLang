@@ -2,13 +2,13 @@ This folder contains the datasets used in **CodedLang**, including annotated rev
 
 ### 1. CodeLang Dataset
 
-- **File:** `CodeLang.csv`  
+- **File:** `CodedLang.csv`  
 - **Description:**  
   Main dataset of Chinese online reviews with coded language annotations.
 
 ### 2. Coded Language Dictionary
 
-- **File:** `Code_Dictionary.csv` *(or `CodeLang.csv` if you keep original name)*  
+- **File:** `Code_Dictionary.csv`
 - **Description:**  
   A dictionary of coded expressions derived from annotations.
 
