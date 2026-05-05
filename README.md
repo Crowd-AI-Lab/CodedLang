@@ -53,7 +53,7 @@ Each sample includes:
 - `span_mask_review`: Span-level masked version of the review 
 - `decode_review`: Decoded version of the review, where coded language is replaced with the intended meaning.   
 - `coded_lang_class`: Taxonomy label(s) for coded language classes  
-- `code_span`: Span indices of coded expressions  
+- `code_span`: Text span of coded expressions  
 - `coded_language`: Binary label  
   - `1`: contains coded language  
   - `0`: non-coded review  
