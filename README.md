@@ -5,9 +5,15 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
 > [Ruyuan Wan](https://ruyuanwan.github.io/), [Changye Li](https://changyeli.github.io/$0), [Ting-Hao 'Kenneth' Huang](https://crowd.ist.psu.edu) <br>
 > [ACL 2026]() <br>
 
+## Overview
+
 <p align="center">
-  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/CodedLang_Concept.png" width="85%">
+  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/CodedLang_Concept.png" width="80%">
 </p>
+<p align="center">
+  <em>Example of creative coded language in a Google Maps restaurant review. Top: the original user review in Chinese, as posted on Google Maps. Left: the machine-generated English translation produced by Google Translate. Right: the inferred underlying meaning obtained by decoding phonetic substitutions.</em>
+</p>
+
 
 ---
 
