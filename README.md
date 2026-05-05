@@ -5,6 +5,9 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
 > [Ruyuan Wan](https://ruyuanwan.github.io/), [Changye Li](https://changyeli.github.io/$0), [Ting-Hao 'Kenneth' Huang](https://crowd.ist.psu.edu) <br>
 > [ACL 2026]() <br>
 
+<p align="center">
+  <img src="assets/CodedLang_Concept.png" width="85%">
+</p>
 
 ---
 
