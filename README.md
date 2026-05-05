@@ -38,8 +38,8 @@ We define 7 categories of coded language:
 
 Our dataset is constructed based on two large-scale Google Maps review datasets:
 
-- [Google Local Reviews (Yan et al., 2023)](https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local  ): 666 million reviews  
-- [Google Restaurant Reviews (Li et al., 2022)](https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants  ): 1.77 million reviews  
+- [Google Local Reviews (Li et al., 2022, Yan et al., 2023)](https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local  ): 666 million reviews  
+- [Google Restaurant Reviews (Yan et al., 2023)](https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants  ): 1.77 million reviews  
 
 ### Annotations
 
