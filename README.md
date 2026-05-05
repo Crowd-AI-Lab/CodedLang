@@ -17,9 +17,6 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
     Right: the inferred underlying meaning obtained by decoding phonetic substitutions.
 </p>
 
-
----
-
 ## CodedLang Dataset
 We introduces CodedLang, a dataset of 7,744 Chinese Google Maps reviews, including 900 reviews with span-level annotations of coded language.
 
