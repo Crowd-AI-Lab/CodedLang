@@ -8,7 +8,7 @@ This repository provides datasets and code for the ACL 2026 long paper on Coded 
 
 ---
 
-## Dataset
+## CodedLang Dataset
 We introduces CodedLang, a dataset of 7,744 Chinese Google Maps reviews, including 900 reviews with span-level annotations of coded language.
 
 🤗 Hugging Face Dataset: https://huggingface.co/datasets/RuyuanWan/CodeLang 
