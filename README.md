@@ -80,7 +80,7 @@ For phonetic-based coded language, we additionally provide:
 We evaluate language models on taxonomy-aware coded language classification.
 
 <p align="center">
-  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/classification_results.png" width="80%">
+  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/classification_results.png" width="60%">
 </p>
 
 <p align="center">
