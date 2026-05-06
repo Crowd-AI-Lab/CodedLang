@@ -75,6 +75,20 @@ For phonetic-based coded language, we additionally provide:
 - `decode_pinyin`: Pinyin of the decoded expression  
 - `code_ipa`: IPA representation of the coded expression  
 - `decode_ipa`: IPA representation of the decoded expression  
+
+## Benchmark Results
+We evaluate language models on taxonomy-aware coded language classification.
+
+<p align="center">
+  <img src="assets/classification_results.png" width="80%">
+</p>
+
+<p align="center">
+Coded language classification performance across models.
+</p>
+
+Results show substantial performance variation across coded language categories, with and cross-lingual transformations remaining particularly challenging for current language models.
+
 ---
 ## Citation
 If you find this work useful for your research, please cite our paper:
