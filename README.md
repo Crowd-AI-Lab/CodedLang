@@ -80,7 +80,7 @@ For phonetic-based coded language, we additionally provide:
 We evaluate language models on taxonomy-aware coded language classification.
 
 <p align="center">
-  <img src="assets/classification_results.png" width="80%">
+  <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/classification_results.png" width="80%">
 </p>
 
 <p align="center">
@@ -88,6 +88,7 @@ Coded language classification performance across models.
 </p>
 
 Results show substantial performance variation across coded language categories, with and cross-lingual transformations remaining particularly challenging for current language models.
+For full benchmark results and analyses, please refer to the paper.
 
 ---
 ## Citation
