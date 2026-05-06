@@ -82,9 +82,8 @@ We evaluate language models on taxonomy-aware coded language classification.
 <p align="center">
   <img src="https://github.com/Crowd-AI-Lab/CodedLang/blob/main/classification_results.png" width="60%">
 </p>
-
 <p align="center">
-Coded language classification performance across models.
+Multi-label coded language classification performance across categories by DeepSeek-V3.2. The highest (lowest) scores in each column are highlighted in bold (underlined).
 </p>
 
 Results show substantial performance variation across coded language categories, with and cross-lingual transformations remaining particularly challenging for current language models.
