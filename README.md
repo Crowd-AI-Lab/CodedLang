@@ -66,7 +66,7 @@ We provide a coded language dictionary derived from human annotations:
 
 Each entry includes:
 - `code_span`: Coded expression  
-- `decode`: Normalized (decoded) form  
+- `decode`: Decoded form  
 - `coded_lang_class`: Corresponding coded language category
 
 For phonetic-based coded language, we additionally provide:
@@ -86,7 +86,7 @@ We evaluate language models on taxonomy-aware coded language classification.
 Multi-label coded language classification performance across categories by DeepSeek-V3.2. The highest (lowest) scores in each column are highlighted in bold (underlined).
 </p>
 
-Results show substantial performance variation across coded language categories, with and cross-lingual transformations remaining particularly challenging for current language models.
+Results show substantial performance variation across coded language categories, cross-lingual phonetic encoding remaining particularly challenging for current language models.
 
 For full benchmark results and analyses, please refer to the paper.
 
